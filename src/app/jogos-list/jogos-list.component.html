@@ -1,0 +1,24 @@
+<table >
+    <thead >
+      <tr>
+        <th >Id</th>
+        <th >Nome</th>
+        <th >Data Lançamento</th>
+        <th >Metacritic</th>
+        <th >Recomendação</th>
+        <th >Preço</th>
+        <th >Url Imagem</th>
+      </tr>
+    </thead>
+    <tbody> 
+      <tr *ngFor="let jogo of jogos">
+        <td>{{ jogo.id }} </td>
+        <td>{{ jogo.responseName }} </td>
+        <td>{{ jogo.releaseDate }} </td>
+        <td>{{ jogo.metacritic }} </td>
+        <td>{{ jogo.recommendationCount }} </td>
+        <td>{{ jogo.priceInitial }} </td>
+        <td>{{ jogo.imageUrl }} </td>
+      </tr>
+    </tbody>
+  </table>
