@@ -14,7 +14,7 @@ export class JogosListComponent implements OnInit{
 
   constructor(private jogoService: JogoService){}
 
-  ngOnInit(): void {
+  ngOnInit(){
       this.jogoService.findAll().subscribe(data => {
         this.jogos = data;
       })

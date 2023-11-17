@@ -6,11 +6,17 @@ import { JogosListComponent } from './jogos-list/jogos-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { JogoService } from './jogo.service';
+import { ClientesListComponent } from './clientes-list/clientes-list.component';
+import { ClienteFormComponent } from './cliente-form/cliente-form.component';
+import { JogoFormComponent } from './jogo-form/jogo-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JogosListComponent
+    JogosListComponent,
+    ClientesListComponent,
+    ClienteFormComponent,
+    JogoFormComponent
   ],
   imports: [
     BrowserModule,
