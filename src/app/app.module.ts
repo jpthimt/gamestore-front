@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { JogosListComponent } from './jogos-list/jogos-list.component';
-import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { JogoService } from './jogo.service';
 import { ClientesListComponent } from './clientes-list/clientes-list.component';
@@ -14,14 +15,15 @@ import { JogoFormComponent } from './jogo-form/jogo-form.component';
   declarations: [
     AppComponent,
     JogosListComponent,
+    JogoFormComponent,
     ClientesListComponent,
-    ClienteFormComponent,
-    JogoFormComponent
+    ClienteFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [JogoService],
   bootstrap: [AppComponent]

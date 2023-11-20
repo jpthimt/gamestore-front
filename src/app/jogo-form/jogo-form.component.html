@@ -1,1 +1,74 @@
-<p>jogo-form works!</p>
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+
+        <div class="Form-group">
+          <br /><br />
+          <label for="responseName">Nome:</label><br />
+          <input
+            type="text"
+            id="responseName"
+            name="responseName"
+            [(ngModel)]="jogo.responseName"
+            #nome="ngModel"
+          />
+  
+          <br /><br />  
+          <label for="releaseDate">Data Lançamento:</label><br />
+          <input
+            type="text"
+            class="Form-control"
+            id="releaseDate"
+            name="releaseDate"
+            [(ngModel)] = "jogo.releaseDate"
+            #releaseDate="ngModel"
+          />
+  
+          <br /><br />
+          <label for="metacritic">Metacritic:</label><br />
+          <input
+            type="text"
+            class="Form-control"
+            id="metacritic"
+            name="metacritic"
+            [(ngModel)]="jogo.metacritic"
+            #metacritic="ngModel"
+          />
+  
+          <br /><br />
+          <label for="recommendationCount">RecommendationCount:</label><br />
+          <input
+            type="text"
+            class="Form-control"
+            id="recommendationCount"
+            name="recommendationCount"
+            [(ngModel)]="jogo.recommendationCount"
+            #recommendationCount="ngModel"
+          />
+  
+          <br /><br />
+          <label for="priceInitial">PriceInitial:</label><br />
+          <input
+            type="text"
+            class="Form-control"
+            id="priceInitial"
+            name="priceInitial"
+            [(ngModel)]="jogo.priceInitial"
+            #priceInitial="ngModel"
+          />
+  
+          <br /><br />
+          <label for="imageUrl">ImageUrl</label><br />
+          <input
+            type="text"
+            class="Form-control"
+            id="imageUrl"
+            name="imageUrl"
+            [(ngModel)]="jogo.imageUrl"
+            #imageUrl="ngModel"
+          />
+  
+            <br /><br />
+        </div>
+        <button type="submit"
+          class="btn btn-info">Submit</button>
+      </form>
+  
